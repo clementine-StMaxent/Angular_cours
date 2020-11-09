@@ -1,2 +1,12 @@
 <h1>{{ title }}</h1>
-<p>Simple paragraphe</p>
+<h1>Bonjour</h1>
+<h1 [innerText]="name"></h1>
+<p [innerText] = "paragraphText"></p>
+<img [src]="image.src" alt="" />
+<p></p>
+<!-- event binding -->
+<button (click)="updateUI()">Update UI</button>
+
+
+<!-- Insertion d'un composant enfant (child component) -->
+<app-counter></app-counter>
