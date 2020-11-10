@@ -1,1 +1,12 @@
-<p>article-list works!</p>
+<h2>Article List Component</h2>
+
+<article *ngFor="let article of articles">
+    <h3>{{article.name}}</h3>
+    <span>{{article.price}} EUR</span>
+    <select (change)="onChange($event, article.price)">
+        <option value="">Quantié</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+</article>
