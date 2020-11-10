@@ -9,7 +9,7 @@
 
 
 <!-- Insertion d'un composant enfant (child component) -->
-<app-counter></app-counter>
+<!-- <app-counter></app-counter> -->
 
 <!-- Utilisation de la directive *ngFor -->
 
@@ -28,7 +28,15 @@
 </ul>
 
 <!-- Switch -->
-
+<!-- 
 <app-switch></app-switch>
 
-<app-carousel></app-carousel>
+<app-carousel></app-carousel> -->
+
+<app-article-list 
+    [articles]="articles"
+    (change) = "test()"
+    >
+</app-article-list>
+
+<app-article-order ></app-article-order>

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 import { SwitchComponent } from './switch/switch.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { CommunicationModule } from './communication/communication.module';
 
 
 
@@ -18,7 +19,8 @@ import { CarouselComponent } from './carousel/carousel.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommunicationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
