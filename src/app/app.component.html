@@ -1,11 +1,12 @@
 <h1>{{ title }}</h1>
-<h1>Bonjour</h1>
+<!-- <h1>Bonjour</h1>
 <h1 [innerText]="name"></h1>
 <p [innerText]="paragraphText"></p>
 <img [src]="image.src" alt="" />
-<p></p>
+<p></p> -->
+
 <!-- event binding -->
-<button (click)="updateUI()">Update UI</button>
+<!-- <button (click)="updateUI()">Update UI</button> -->
 
 
 <!-- Insertion d'un composant enfant (child component) -->
@@ -13,7 +14,7 @@
 
 <!-- Utilisation de la directive *ngFor -->
 
-<p *ngFor="let student of students">{{student}}</p>
+<!-- <p *ngFor="let student of students">{{student}}</p>
 
 
 <ul>
@@ -25,18 +26,12 @@
             (bon élève)
         </span>
     </li>
-</ul>
+</ul> -->
 
 <!-- Switch -->
-<!-- 
-<app-switch></app-switch>
+
+<!-- <app-switch></app-switch>
 
 <app-carousel></app-carousel> -->
 
-<app-article-list 
-    [articles]="articles"
-    (change) = "test()"
-    >
-</app-article-list>
-
-<app-article-order ></app-article-order>
+<app-communication></app-communication>

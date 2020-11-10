@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {Article} from './communication/interfaces'
 
 interface Image {
   src: string;
@@ -41,13 +40,6 @@ export class AppComponent {
   color: string = "green";
 
   
-// articles
-  articles: Article[] = [
-    {name: "Pomme", price: 2.99},
-    {name: "Salade", price: 1.80},
-    {name: "T-shirt", price: 5.00},
-    {name: "Pantalon", price: 25.00}
-    ]
 
   // méthodes
   constructor() {
@@ -60,10 +52,6 @@ export class AppComponent {
     this.name
 
     this.image.src = "assets/image/l-attaque-des-titans-manga-2020-pika-edition.jpg"
-  }
-
-  test(){
-    console.log("Mon enfant me parle")
   }
 
 }
