@@ -1,0 +1,8 @@
+
+<app-article-list 
+    [articles]="articles"
+    (change) = "UdpateSubTotals($event)"
+>
+</app-article-list>
+
+<app-article-order [subtotals]="subtotals"></app-article-order>
