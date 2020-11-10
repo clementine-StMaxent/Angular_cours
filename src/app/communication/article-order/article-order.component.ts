@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-article-order',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleOrderComponent implements OnInit {
 
-  total : number = 0;
+  @Input() subtotals: number[] = [ ];
+
+  total : number = 0 ;
 
   constructor() { }
 

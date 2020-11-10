@@ -10,8 +10,8 @@ export class ArticleListComponent implements OnInit {
 
   @Input() articles: Article[];
   total : number = 0;
-
   @Output() change: EventEmitter<void> = new EventEmitter();
+  subtotals: number[]= [];
 
   constructor() { }
 
