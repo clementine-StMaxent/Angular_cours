@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleOrderComponent implements OnInit {
 
+  total : number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import {Article} from '../interfaces';
 
 @Component({
@@ -10,6 +10,9 @@ export class ArticleListComponent implements OnInit {
 
   @Input() articles: Article[];
   total : number = 0;
+
+  @Output() change: EventEmitter<void> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
@@ -19,6 +22,7 @@ export class ArticleListComponent implements OnInit {
     let value = event.target.value;
     if(value != "")this.total = (value * price);
     console.log(this.total);
+    this.change.emit();
   }
 
 }
