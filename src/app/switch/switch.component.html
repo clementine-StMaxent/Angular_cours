@@ -1,6 +1,6 @@
 <!-- Rounded switch -->
 
-<label (click)="value_switch()" class="switch text_switch">
+<label (click)="value_switch()" class="switch text_switch" [ngClass] = "{'off':isOff}">
     <input  type="checkbox">
     <span class="slider round" style></span>
 </label>
